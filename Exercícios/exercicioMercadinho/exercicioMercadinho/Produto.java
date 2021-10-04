@@ -1,6 +1,6 @@
 package exercicioMercadinho;
 
-public abstract class Produto {
+public abstract class Produto implements Venda {
 	
 	private String nome;
 	private double valor;
