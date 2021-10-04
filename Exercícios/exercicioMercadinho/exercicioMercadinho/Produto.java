@@ -34,6 +34,7 @@ public abstract class Produto implements Venda {
 		return total;
 	}
 
+	@Override
 	public Double Vender(int quantidadeDeItens) {
 		double venda = quantidadeDeItens * this.valor;
 		total += venda;
