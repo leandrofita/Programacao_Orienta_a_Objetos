@@ -18,6 +18,10 @@ public class Estado {
 		return sigla;
 	}
 	
-	
+	@Override
+	public String toString() {
+		String mensagem = "\nEstado: " + nomeEstado + ", Sigla UF: " + sigla;
+		return mensagem;
+	}
 
 }

@@ -18,7 +18,10 @@ public class Cidade {
 		return estado;
 	}
 	
-	
-	
+	@Override
+	public String toString() {
+		String mensagem = "\nCidade: " + nomeCidade+estado.toString();
+		return mensagem;
+	}
 
 }

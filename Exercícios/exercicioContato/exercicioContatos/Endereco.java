@@ -5,13 +5,14 @@ public class Endereco {
 	private String rua;
 	private String bairro;
 	private String cep;
-	private Cidade cidade;
-	private Estado estado;
+	Cidade cidade;
 	
-	Endereco(String rua, String bairro, String cep){
+	
+	Endereco(String rua, String bairro, String cep, Cidade cidade){
 		 this.rua= rua;
 		 this.bairro = bairro;
 		 this.cep = cep;
+		 this.cidade = cidade;
 	}
 
 	public String getRua() {
@@ -37,16 +38,11 @@ public class Endereco {
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
-
-	public Cidade getCidade() {
-		return cidade;
+	@Override
+	public String toString() {
+		String mensagem = "\nEndereço: "+ rua +", "+ bairro +", CEP: "+ cep+cidade.toString();
+		return mensagem;
 	}
-
-	public Estado getEstado() {
-		return estado;
-	}
-	
-	
 	
 	
 }
